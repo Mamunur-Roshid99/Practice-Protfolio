@@ -10,6 +10,15 @@ body {
     color: white;
 }
 
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+    body {
+        @apply dark:bg-[#000]
+    }
+}
+
 
 :root {
     --black: #151515;
