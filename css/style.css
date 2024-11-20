@@ -6,6 +6,8 @@
 
 body {
     font-family: "Space Grotesk", sans-serif;
+    background: var(--black);
+    color: white;
 }
 
 
