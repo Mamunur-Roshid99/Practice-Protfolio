@@ -9,13 +9,9 @@ body {
     background: var(--black);
     color: white;
 }
-
 @layer base {
     html {
         @apply scroll-smooth;
-    }
-    body {
-        @apply dark:bg-[#000]
     }
 }
 
