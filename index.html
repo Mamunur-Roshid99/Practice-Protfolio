@@ -18,7 +18,7 @@
 <body>
     
     <!-- Header Section Starts -->
-     <header class="relative border-b-2 border-[var(--White)] px-6 lg:px-14">
+     <header class="relative border-b-2 border-[var(--White)] my-0 mx-auto w-[80%] lg:w-[1100px]">
         <div class="container">
             <img src="images/Group 26.png"
                 class="absolute top-44 left-[-280px] md:top-14 md:left-[-650px] lg:w-80 lg:left-0 lg:top-20">
@@ -57,7 +57,7 @@
     <!-- Header Section Ends -->
 
     <!-- Skills Section starts -->
-     <section id="Skills" class="mt-9 relative overflow-hidden px-6 lg:px-14">
+     <section id="Skills" class="mt-9 relative overflow-hidden my-0 mx-auto w-[80%] lg:w-[1100px]">
         <div class="container">
             <img src="images/Group 26 - Copy.png" class="absolute bottom-[20px] right-[-190px] w-[340px]">
             <h1 class="text-center text-3xl font-medium mb-12 text-[var(--Green)] underline uppercase">Skills</h1>
@@ -99,15 +99,15 @@
     <!-- Skills Section ends -->
 
     <!-- Project Section Starts -->
-    <section id="project" class="mt-10 px-6 lg:px-14">
-        <div class="contain-content">
+    <section id="project-section" class="relative mt-10 my-0 mx-auto w-[80%] lg:w-[1100px]">
+        <div class="container">
             <div id="project-text" class="flex items-center justify-between mb-10">
                 <h1 class="text-4xl font-bold md:text-7xl">Projects</h1>
                 <p class="text-base font-bold hover:text-[var(--Green)] tracking-wider cursor-pointer"><span
                         class="border-b-2 border-[var(--Green)]">CONTACT ME</span></p>
             </div>
             <div id="project" class="grid grid-cols-1 gap-9 md:grid-cols-2 lg:grid-cols-3">
-                <div id="project-1" class="h-[370px]">
+                <div id="element" class="h-[370px] div">
                     <div class="relative w-full mb-2 lg:mb-1 duration-700 hover:opacity-60">
                         <a href=".//images/project1.jpg" target="_blank"><span
                                 class="text-base font-bold uppercase border-b-2 border-[var(--Green)] absolute top-[50%] left-[30%] opacity-0 duration-700 hover:opacity-95">view
@@ -120,7 +120,7 @@
                             class="text-base font-bold hover:text-[var(--Green)] uppercase border-b-2 border-[var(--Green)]">view
                             project</span></a>
                 </div>
-                <div id="project-2" class="h-[370px]">
+                <div class="h-[370px]">
                     <div class="relative w-full mb-2 lg:mb-1 duration-700 hover:opacity-60">
                         <a href=".//images/project1.jpg" target="_blank"><span
                                 class="text-base font-bold uppercase border-b-2 border-[var(--Green)] absolute top-[50%] left-[30%] opacity-0 duration-700 hover:opacity-95">view
@@ -133,7 +133,7 @@
                             class="text-base font-bold hover:text-[var(--Green)] uppercase border-b-2 border-[var(--Green)]">view
                             project</span></a>
                 </div>
-                <div id="project-3" class="h-[370px]">
+                <div class="h-[370px]">
                     <div class="relative w-full mb-2 lg:mb-1 duration-700 hover:opacity-60">
                         <a href=".//images/project1.jpg" target="_blank"><span
                                 class="text-base font-bold uppercase border-b-2 border-[var(--Green)] absolute top-[50%] left-[30%] opacity-0 duration-700 hover:opacity-95">view
@@ -146,7 +146,7 @@
                             class="text-base font-bold hover:text-[var(--Green)] uppercase border-b-2 border-[var(--Green)]">view
                             project</span></a>
                 </div>
-                <div id="project-4" class="h-[370px]">
+                <div class="h-[370px]">
                     <div class="relative w-full mb-2 lg:mb-1 duration-700 hover:opacity-60">
                         <a href=".//images/project1.jpg" target="_blank"><span
                                 class="text-base font-bold uppercase border-b-2 border-[var(--Green)] absolute top-[50%] left-[30%] opacity-0 duration-700 hover:opacity-95">view
@@ -160,13 +160,26 @@
                             project</span></a>
                 </div>
             </div>
+            <!-- add project btn -->
+             <button id="add-project" class="px-4 py-2 bg-[var(--Green)] font-bold rounded-lg mb-4
+             ">Add Project</button>
+
+            <form id="form" class="absolute opacity-0 bg-white w-[300px] mx-auto my-0 flex flex-col items-center justify-center gap-4 rounded-lg">
+                <h1 class="text-black font-bold text-2xl mb-6">Upload Project</h1>
+                <input type="text" placeholder="Title" id="title" class="text-black">
+                <input type="text" placeholder="Useing Tool" id="text" class="text-black">
+                <input type="text" placeholder="viewproject" id="viewproject" class="text-black">
+                <label for="input-file" class="text-white font-medium bg-orange-600 px-4 py-2 rounded-xl">Upload Image</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file" class="hidden">
+                <button id="btn" class="text-white bg-[var(--Green)] mb-6 px-5 py-2 rounded-2xl font-medium">btn</button>
+            </form>
         </div>
     </section>
     <!-- Project Seciton ends -->
 
     <!-- Contact Section starts -->
-     <section id="contact" class="mt-10 bg-[#242424] px-6 py-8 pb-28 border-b-2 border-[var(--White)] ">
-        <div class="contain-content lg:px-14 lg:flex lg:gap-52 lg:pt-14">
+     <section id="contact" class="mt-10 bg-[#242424] py-8 pb-28 border-b-2 border-[var(--White)]">
+        <div class="container my-0 mx-auto w-[80%] lg:w-[1100px] lg:flex lg:gap-52">
             <div class="lg:w-[50%]">
                 <h1 class="text-center text-4xl font-bold mb-5 lg:text-start lg:text-7xl lg:mb-9">Contact</h1>
                 <p class="text-base text-[var(--Grey)] mb-9 lg:text-base">I would love to hear about your project and how I could
@@ -187,15 +200,17 @@
     <!-- Contact Section ends -->
 
     <!-- footer seciton starts -->
-    <footer class="bg-[#242424] px-8 lg:px-20 py-10 text-center md:text-start md:flex md:items-center md:justify-between">
-                    <h1 class="text-2xl font-bold mb-3 md:text-3xl">Saifuddin Imon</h1>
-                    <div class="flex items-center justify-center gap-7">
-                        <a href="https://www.facebook.com/imonbai4" target="_blank" class="hover:text-[var(--Green)] duration-700"><i
-                                class="fa-brands fa-facebook text-2xl"></i></a>
-                        <a href="#" class="hover:text-[var(--Green)] duration-700"><i class="fa-brands fa-linkedin text-2xl"></i></a>
-                        <a href="#" class="hover:text-[var(--Green)] duration-700"><i
-                                class="fa-brands fa-square-instagram text-2xl"></i></a>
-                    </div>
+    <footer class="bg-[#242424] py-10 text-center ">
+        <div class="container my-0 mx-auto w-[80%] lg:w-[1100px] md:text-start md:flex md:items-center md:justify-between">
+            <h1 class="text-2xl font-bold mb-3 md:text-3xl">Saifuddin Imon</h1>
+            <div class="flex items-center justify-center gap-7">
+                <a href="https://www.facebook.com/imonbai4" target="_blank" class="hover:text-[var(--Green)] duration-700"><i
+                        class="fa-brands fa-facebook text-2xl"></i></a>
+                <a href="#" class="hover:text-[var(--Green)] duration-700"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                <a href="#" class="hover:text-[var(--Green)] duration-700"><i
+                        class="fa-brands fa-square-instagram text-2xl"></i></a>
+            </div>
+        </div>
     </footer>
     <!-- footer seciton ends -->
 
